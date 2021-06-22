@@ -351,7 +351,8 @@ body {
   color: #000; }
 
 .header__sign {
-  display: flex; }
+  display: flex;
+  background: trans; }
 
 .nav__list {
   display: flex; }
@@ -843,7 +844,7 @@ textarea::placeholder {
 
 .btn__dark {
   display: block;
-  width: 40%;
+  width: 60%;
   margin: 0 auto; }
 
 .show {
