@@ -907,8 +907,7 @@ textarea::placeholder {
   background: #5633e4;
   width: 100%;
   padding: 15px;
-  transition: margin 0.3s linear;
-  z-index: -100; }
+  transition: top 0.3s linear; }
   .burger__menu a {
     color: rgba(0, 0, 0, 0.767); }
 
@@ -916,9 +915,8 @@ textarea::placeholder {
   margin-bottom: 10px; }
 
 .burger-mt {
-  transition: margin 0.3s linear;
-  margin-top: 50px;
-  z-index: 10; }
+  transition: top 0.3s linear;
+  top: 50px; }
 
 @media (max-width: 900px) {
   .aboutUs-media {
@@ -966,6 +964,14 @@ textarea::placeholder {
 @media (max-width: 560px) {
   .header__signs {
     display: none; }
+  .header__sign {
+    padding: 0; }
+    .header__sign:hover {
+      background: none; }
+  .nav__link:hover {
+    color: #fff; }
+  .btn-sign {
+    margin-left: auto; }
   .header__inner {
     min-height: 49px;
     margin-bottom: 60px;
