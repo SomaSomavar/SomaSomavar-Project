@@ -415,7 +415,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    margin: 0 5px;
+    margin: 0 auto;
 }
 
 .header__sign {
@@ -1040,7 +1040,7 @@ textarea::placeholder {
 
 .btn__dark {
     display: block;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -1225,6 +1225,22 @@ textarea::placeholder {
 @media (max-width: 560px) {
     .header__signs {
         display: none;
+    }
+
+    .header__sign {
+        padding: 0;
+    }
+
+    .header__sign:hover {
+        background: none;
+    }
+
+    .nav__link:hover {
+        color: #fff;
+    }
+
+    .btn-sign {
+        margin-left: auto;
     }
 
     .header__inner {

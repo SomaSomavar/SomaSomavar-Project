@@ -1,1 +1,122 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){n(1),e.exports=n(2)},function(e,t){function n(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var r,o=function(e,t){var r="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!r){if(Array.isArray(e)||(r=function(e,t){if(!e)return;if("string"==typeof e)return n(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);"Object"===r&&e.constructor&&(r=e.constructor.name);if("Map"===r||"Set"===r)return Array.from(e);if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return n(e,t)}(e))||t&&e&&"number"==typeof e.length){r&&(e=r);var o=0,c=function(){};return{s:c,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:c}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var u,i=!0,l=!1;return{s:function(){r=r.call(e)},n:function(){var e=r.next();return i=e.done,e},e:function(e){l=!0,u=e},f:function(){try{i||null==r.return||r.return()}finally{if(l)throw u}}}}(document.querySelectorAll("a[href*='#']"));try{var c=function(){var e=r.value;e.addEventListener("click",(function(t){t.preventDefault();var n=e.getAttribute("href");document.querySelector(""+n).scrollIntoView({behavior:"smooth",block:"start"})}))};for(o.s();!(r=o.n()).done;)c()}catch(e){o.e(e)}finally{o.f()}var u=document.querySelector("[data-modal]"),i=document.querySelector("[data-in]"),l=document.querySelector(".modal"),a=document.querySelector(".modalIn"),d=document.querySelector("[data-close]"),f=document.querySelector("[data-closeBTn]");function s(e){e.classList.add("hide"),document.body.style.overflow=""}i.addEventListener("click",(function(){a.classList.toggle("hide"),document.body.style.overflow="hidden"})),u.addEventListener("click",(function(){l.classList.toggle("hide"),document.body.style.overflow="hidden"})),d.addEventListener("click",(function(){s(l)})),l.addEventListener("click",(function(e){e.target===l&&s(l)})),a.addEventListener("click",(function(e){e.target===a&&s(a)})),f.addEventListener("click",(function(){s(a)})),document.querySelector(".burger").addEventListener("click",(function(e){document.querySelector(".header").classList.toggle("active"),document.querySelector(".burger__menu").classList.toggle("burger-mt")}))},function(e,t){console.log("file 2")}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const anchors = document.querySelectorAll(\"a[href*='#']\")\r\n\r\nfor (let anchor of anchors) {\r\n\tanchor.addEventListener(\"click\", (e) => {\r\n\t\te.preventDefault();\r\n\t\tconst blockId = anchor.getAttribute(\"href\");\r\n\t\tdocument.querySelector(\"\" + blockId).scrollIntoView({\r\n\t\t\tbehavior: \"smooth\",\r\n\t\t\tblock: \"start\"\r\n\t\t})\r\n\t})\r\n}\r\n\r\n//Modal\r\n\r\nconst modalTrigger = document.querySelectorAll(\"[data-modal]\");\r\nconst modalIn = document.querySelectorAll(\"[data-in]\");\r\nconst modal = document.querySelector(\".modal\");\r\nconst modalOpen = document.querySelector(\".modalIn\");\r\nconst modalCloseBtn = document.querySelector(\"[data-close]\");\r\nconst modalClose = document.querySelector(\"[data-closeBTn]\");\r\n\r\nfunction closeModal(modalOpen) {\r\n\tmodalOpen.classList.add(\"hide\")\r\n\tdocument.body.style.overflow = \"\"\r\n}\r\n\r\nmodalIn.forEach(element => {\r\n\telement.addEventListener(\"click\", () => {\r\n\t\tmodalOpen.classList.toggle(\"hide\");\r\n\t\tdocument.body.style.overflow = \"hidden\"\r\n\t})\r\n});\r\n\r\n\r\n\r\nmodalTrigger.forEach(element => {\r\n\telement.addEventListener(\"click\", () => {\r\n\t\tmodal.classList.toggle(\"hide\");\r\n\t\tdocument.body.style.overflow = \"hidden\"\r\n\t})\r\n});\r\n\r\nmodalCloseBtn.addEventListener(\"click\", () => {\r\n\tcloseModal(modal)\r\n})\r\n\r\nmodal.addEventListener(\"click\", (e) => {\r\n\tif (e.target === modal) {\r\n\t\tcloseModal(modal)\r\n\t}\r\n})\r\n\r\nmodalOpen.addEventListener(\"click\", (e) => {\r\n\tif (e.target === modalOpen) {\r\n\t\tcloseModal(modalOpen)\r\n\t}\r\n})\r\n\r\nmodalClose.addEventListener(\"click\", () => {\r\n\tcloseModal(modalOpen)\r\n})\r\n\r\n\r\n/* burger */\r\n\r\nconst burger = document.querySelector(\".burger\");\r\n\r\nburger.addEventListener(\"click\", (e) => {\r\n\tdocument.querySelector(\".header\").classList.toggle(\"active\");\r\n\tdocument.querySelector(\".burger__menu\").classList.toggle(\"burger-mt\")\r\n})\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/file2.js":
+/*!********************************!*\
+  !*** ./src/assets/js/file2.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack:///./src/assets/js/file2.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/file2.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! C:\\Users\\Administrator\\Desktop\\projectgames\\gulp4-project\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Administrator\\Desktop\\projectgames\\gulp4-project\\src\\assets\\js\\file2.js */\"./src/assets/js/file2.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/file2.js?");
+
+/***/ })
+
+/******/ });
