@@ -415,7 +415,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    margin: 0 auto;
+    margin: 0 5px;
 }
 
 .header__sign {
@@ -1314,5 +1314,9 @@ textarea::placeholder {
     .burger__menu {
         display: -ms-flexbox;
         display: flex;
+    }
+
+    .modal__content {
+        padding: 30px 15px;
     }
 }
